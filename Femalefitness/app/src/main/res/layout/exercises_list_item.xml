@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/tvNameOfExercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="60dp"
+                android:layout_toStartOf="@+id/gifItemWorkout"
+                android:padding="10dp"
+                android:text="Workout name"
+                android:textColor="@color/colorLightGreen"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvTimeOfExercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNameOfExercise"
+                android:layout_marginEnd="60dp"
+                android:layout_toStartOf="@+id/gifItemWorkout"
+                android:padding="20dp"
+                android:text="Time"
+                android:textColor="@color/colorLightGreen"
+                android:textSize="13sp" />
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifItemWorkout"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/ex_biceps_stretch"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

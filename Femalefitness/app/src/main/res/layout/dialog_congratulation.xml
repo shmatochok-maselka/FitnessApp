@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="30dp"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="3dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCongrats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="CONGRATULATIONS!"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#009688"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gfCongrats"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gf_congrats" />
+
+            <TextView
+                android:id="@+id/tvCongFinish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="15dp"
+                android:layout_below="@+id/gfCongrats"
+                android:text="You finished this workout!"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreen"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btCongrats"
+                android:layout_below="@+id/tvCongFinish"
+                android:layout_centerHorizontal="true"
+                android:text="OK"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_corners_bt"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

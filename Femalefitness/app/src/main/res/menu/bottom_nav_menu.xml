@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/workouts"
+        android:title="Workouts"
+        android:icon="@drawable/ic_fitness"/>
+    <item android:id="@+id/calculators"
+        android:title="Calculators"
+        android:icon="@drawable/ic_calculator"/>
+    <item android:id="@+id/reminders"
+        android:title="Reminder"
+        android:icon="@drawable/ic_reminder"/>
+</menu>

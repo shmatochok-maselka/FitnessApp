@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EventEditActivity">
+    <Toolbar
+        android:id="@+id/tbSport"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/toolbar_add_event" />
+
+    <EditText
+        android:id="@+id/eventNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorLightGreen"
+        android:ems="10"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/eventDateTV"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Date"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:background="@drawable/round_corners_bt"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:background="@drawable/round_corners_bt"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:onClick="saveEventAction"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+</LinearLayout>
